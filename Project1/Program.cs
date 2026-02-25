@@ -91,6 +91,78 @@ namespace Project1
 
 
             //Exercise: If statements
+            // Console.Write("Enter the first number: ");
+            // string firstNumberInput = Console.ReadLine() ?? "0";
+            // int firstNumber = Convert.ToInt32(firstNumberInput);
+
+            // Console.Write("Enter the second number: ");
+            // string secondNumberInput = Console.ReadLine() ?? "0";   
+            // int secondNumber = Convert.ToInt32(secondNumberInput);
+
+            // int answer = firstNumber * secondNumber;
+
+            // Console.WriteLine("Value of " + firstNumber + " * " + secondNumber + " is: ");
+            // string answerInput = Console.ReadLine() ?? "0";
+            // int userAnswer = Convert.ToInt32(answerInput);
+
+            // if (userAnswer == answer)
+            // {
+            //     Console.WriteLine("Correct!");
+            // }
+            // else
+            // {
+            //     Console.WriteLine("Incorrect! The correct answer is: " + answer);
+            // }
+
+
+            //Switch statements
+            Console.Write("Enter a number for a day of the week: ");
+            int day = Convert.ToInt32(Console.ReadLine() ?? "0");
+
+            switch (day)
+            {
+                case 1:
+                    Console.WriteLine("Monday");
+                    break;
+                case 2:
+                    Console.WriteLine("Tuesday");
+                    break;
+                case 3:
+                    Console.WriteLine("Wednesday");
+                    break;
+                case 4:
+                    Console.WriteLine("Thursday");
+                    break;
+                case 5:
+                    Console.WriteLine("Friday");
+                    break;
+                case 6:
+                    Console.WriteLine("Saturday");
+                    break;
+                case 7:
+                    Console.WriteLine("Sunday");
+                    break;
+                default:
+                    Console.WriteLine("Invalid input! Please enter a number between 1 and 7.");
+                    break;
+            }
+
+
+            //For loops
+            for(int i = 1; i <= 5; i++)
+            {
+                Console.WriteLine("Hello, I am a for loop and this is iteration number " + i);
+            }
+
+
+            //While loops
+            int j = 0;
+            while (j < 5)
+            {
+                Console.WriteLine("Hello, I am a while loop and this is iteration number " + j);
+                j++;
+            }
+
             Console.Write("Enter the first number: ");
             string firstNumberInput = Console.ReadLine() ?? "0";
             int firstNumber = Convert.ToInt32(firstNumberInput);
@@ -100,10 +172,15 @@ namespace Project1
             int secondNumber = Convert.ToInt32(secondNumberInput);
 
             int answer = firstNumber * secondNumber;
+            int userAnswer = 0;
 
-            Console.WriteLine("Value of " + firstNumber + " * " + secondNumber + " is: ");
+            Console.WriteLine("What is the value of " + firstNumber + " * " + secondNumber + "?");
+            Console.WriteLine();
+
+            while (answer != userAnswer)
+            {
             string answerInput = Console.ReadLine() ?? "0";
-            int userAnswer = Convert.ToInt32(answerInput);
+            userAnswer = Convert.ToInt32(answerInput);
 
             if (userAnswer == answer)
             {
@@ -111,11 +188,13 @@ namespace Project1
             }
             else
             {
-                Console.WriteLine("Incorrect! The correct answer is: " + answer);
+                Console.WriteLine("Incorrect! Try again!");
+            }
             }
 
            
             Console.ReadLine();
+            
         }
     }
 }
