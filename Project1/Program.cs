@@ -149,7 +149,7 @@ namespace Project1
 
 
             //For loops
-            for(int i = 1; i <= 5; i++)
+            for (int i = 1; i <= 5; i++)
             {
                 Console.WriteLine("Hello, I am a for loop and this is iteration number " + i);
             }
@@ -168,7 +168,7 @@ namespace Project1
             int firstNumber = Convert.ToInt32(firstNumberInput);
 
             Console.Write("Enter the second number: ");
-            string secondNumberInput = Console.ReadLine() ?? "0";   
+            string secondNumberInput = Console.ReadLine() ?? "0";
             int secondNumber = Convert.ToInt32(secondNumberInput);
 
             int answer = firstNumber * secondNumber;
@@ -177,24 +177,46 @@ namespace Project1
             Console.WriteLine("What is the value of " + firstNumber + " * " + secondNumber + "?");
             Console.WriteLine();
 
-            while (answer != userAnswer)
-            {
-            string answerInput = Console.ReadLine() ?? "0";
-            userAnswer = Convert.ToInt32(answerInput);
+            // while (answer != userAnswer)
+            // {
+            //     string answerInput = Console.ReadLine() ?? "0";
+            //     userAnswer = Convert.ToInt32(answerInput);
 
-            if (userAnswer == answer)
-            {
-                Console.WriteLine("Correct!");
-            }
-            else
-            {
-                Console.WriteLine("Incorrect! Try again!");
-            }
-            }
+            //     if (userAnswer == answer)
+            //     {
+            //         Console.WriteLine("Correct!");
+            //     }
+            //     else
+            //     {
+            //         Console.WriteLine("Incorrect! Try again!");
+            //     }
+            // }
 
-           
+            do
+            {
+                Console.Write("Your answer: ");
+                string answerInput = Console.ReadLine() ?? "0";
+                userAnswer = Convert.ToInt32(answerInput);
+
+                if (answer != userAnswer)
+                {
+                    Console.WriteLine("Incorrect! Try again!");
+                    Console.WriteLine();
+                }
+
+            } while (answer != userAnswer);
+
+            Console.WriteLine("Congratulations! You got the correct answer!");
+
+
+            //Conditional operator
+            int posNumber = -5;
+            string result = posNumber >= 0 ? "Valid" : "Invalid";
+            Console.WriteLine(result);
+
+
             Console.ReadLine();
-            
+
         }
     }
 }
