@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace TrackerLibrary
 {
+    /// <summary>
+    /// Represents a team that can participate in the tournament.
+    /// </summary>
     public class TeamModel
     {
         /// <summary>

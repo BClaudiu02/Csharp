@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace TrackerLibrary
 {
+    /// <summary>
+    /// Represents a prize that can be awarded in the tournament.
+    /// </summary>
     public class PrizeModel
     {
         /// <summary>

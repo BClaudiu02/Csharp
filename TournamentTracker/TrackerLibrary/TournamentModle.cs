@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace TrackerLibrary
 {
+    /// <summary>
+    /// Represents a tournament, which includes the name, entry fee,
+    /// list of teams, list of prizes, and the rounds of matchups.
+    /// </summary>
     public class TournamentModel
     {
         /// <summary>
