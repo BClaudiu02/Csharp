@@ -1,3 +1,4 @@
 <Solution>
   <Project Path="TrackerLibrary/TrackerLibrary.csproj" />
+  <Project Path="TrackerUI/TrackerUI.csproj" Id="79f98c30-fec6-4a94-bb19-01e489c0f457" />
 </Solution>
