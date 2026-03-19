@@ -33,7 +33,7 @@
             this.tournamentNameLabel = new System.Windows.Forms.Label();
             this.entryFeeValue = new System.Windows.Forms.TextBox();
             this.entryFeeLabel = new System.Windows.Forms.Label();
-            this.SelectTeamDropDown = new System.Windows.Forms.ComboBox();
+            this.selectTeamDropDown = new System.Windows.Forms.ComboBox();
             this.selectTeamLabel = new System.Windows.Forms.Label();
             this.createNewTeamLink = new System.Windows.Forms.LinkLabel();
             this.addTeamButton = new System.Windows.Forms.Button();
@@ -102,15 +102,15 @@
             this.entryFeeLabel.TabIndex = 11;
             this.entryFeeLabel.Text = "Entry Fee";
             // 
-            // SelectTeamDropDown
+            // selectTeamDropDown
             // 
-            this.SelectTeamDropDown.DropDownWidth = 209;
-            this.SelectTeamDropDown.FormattingEnabled = true;
-            this.SelectTeamDropDown.Location = new System.Drawing.Point(22, 270);
-            this.SelectTeamDropDown.Margin = new System.Windows.Forms.Padding(4);
-            this.SelectTeamDropDown.Name = "SelectTeamDropDown";
-            this.SelectTeamDropDown.Size = new System.Drawing.Size(308, 38);
-            this.SelectTeamDropDown.TabIndex = 14;
+            this.selectTeamDropDown.DropDownWidth = 209;
+            this.selectTeamDropDown.FormattingEnabled = true;
+            this.selectTeamDropDown.Location = new System.Drawing.Point(22, 270);
+            this.selectTeamDropDown.Margin = new System.Windows.Forms.Padding(4);
+            this.selectTeamDropDown.Name = "selectTeamDropDown";
+            this.selectTeamDropDown.Size = new System.Drawing.Size(308, 38);
+            this.selectTeamDropDown.TabIndex = 14;
             // 
             // selectTeamLabel
             // 
@@ -272,7 +272,7 @@
             this.Controls.Add(this.createPrizeButton);
             this.Controls.Add(this.addTeamButton);
             this.Controls.Add(this.createNewTeamLink);
-            this.Controls.Add(this.SelectTeamDropDown);
+            this.Controls.Add(this.selectTeamDropDown);
             this.Controls.Add(this.selectTeamLabel);
             this.Controls.Add(this.entryFeeValue);
             this.Controls.Add(this.entryFeeLabel);
@@ -295,7 +295,7 @@
         private System.Windows.Forms.Label tournamentNameLabel;
         private System.Windows.Forms.TextBox entryFeeValue;
         private System.Windows.Forms.Label entryFeeLabel;
-        private System.Windows.Forms.ComboBox SelectTeamDropDown;
+        private System.Windows.Forms.ComboBox selectTeamDropDown;
         private System.Windows.Forms.Label selectTeamLabel;
         private System.Windows.Forms.LinkLabel createNewTeamLink;
         private System.Windows.Forms.Button addTeamButton;
